@@ -1,0 +1,39 @@
+.container-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 224px;
+    width: 100vw;
+    padding-top: 50px;
+
+    background: linear-gradient(90deg, #05ede3 0.02%, #645ffb 99.63%);
+}
+
+.container-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1440px;
+    height: 46px;
+}
+
+.container-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    margin-right: 16px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.icon-user,
+.icon-logout {
+    cursor: pointer;
+}

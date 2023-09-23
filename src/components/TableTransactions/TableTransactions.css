@@ -1,0 +1,41 @@
+.main-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 964px;
+    max-height: 500px;
+
+    font-family: var(--secondary-font);
+}
+
+.head-main-table {
+    padding: 5px;
+}
+
+.head-main-table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 58px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 30px;
+
+    color: #000;
+    background: #fafafa;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container-body-table {
+    display: block;
+    overflow-y: auto;
+
+    height: 430px;
+}
+
+.smaller-table {
+    height: 220px;
+}

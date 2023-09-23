@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

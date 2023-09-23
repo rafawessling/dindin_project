@@ -1,0 +1,16 @@
+.redirect-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    height: 80px;
+}
+
+.back-login {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #7b61ff;
+}

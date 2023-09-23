@@ -1,0 +1,92 @@
+.body-main-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+    padding: 0 30px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.date-head img {
+    margin: 0px 0px 1px 1px;
+
+    cursor: pointer;
+}
+
+.date-table,
+.amount-table {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.date-table {
+    color: #000;
+}
+
+.withdrawal-value {
+    color: #fa8c10;
+}
+
+.deposit-value {
+    color: #7b61ff;
+}
+
+.col1 {
+    text-align: left;
+    width: 100px;
+}
+
+.col2 {
+    width: 170px;
+}
+
+.col3 {
+    width: 250px;
+}
+
+.col4 {
+    width: 150px;
+}
+
+.col5 {
+    width: 130px;
+}
+
+.col6 {
+    width: 90px;
+    position: relative;
+}
+
+.container-edit-delete {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-edit-delete img {
+    cursor: pointer;
+}
+
+.container-body-table::-webkit-scrollbar {
+    width: 6px;
+}
+.container-body-table::-webkit-scrollbar-track {
+    margin-top: 5px;
+
+    background: #f3f3f3;
+    border-radius: 20px;
+}
+
+.container-body-table::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 120, 217, 0.2);
+    border-radius: 20px;
+    border: 1px solid #f3f3f3;
+}
+
+.container-body-table {
+    scrollbar-color: #f3f3f3;
+}

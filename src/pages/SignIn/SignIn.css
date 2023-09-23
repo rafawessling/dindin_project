@@ -1,0 +1,65 @@
+.container-signin {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+
+    background: url(../../assets/background.png) no-repeat center / cover;
+}
+
+.container-main-signin {
+    display: flex;
+    flex-direction: column;
+
+    width: 1440px;
+}
+
+.logo {
+    width: 170px;
+    align-self: flex-start;
+}
+
+.container-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.container-texts {
+    width: 50%;
+}
+
+.container-texts h2 {
+    width: 615px;
+
+    font-family: var(--primary-font);
+    font-size: 52px;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.word-highlight {
+    color: #7978d9;
+}
+
+.container-texts p {
+    width: 600px;
+    margin: 33px 0 43px 0;
+
+    font-family: var(--primary-font);
+    font-size: 28px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.form-login {
+    width: 50%;
+}

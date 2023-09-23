@@ -1,0 +1,91 @@
+.container-summary-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 236px;
+    height: 196px;
+
+    border-radius: 10px;
+    background: #fafafa;
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.content-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 175px;
+    height: 196px;
+
+    font-family: var(--primary-font);
+}
+
+.title-summary-table {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #2f2f2f;
+}
+
+.summary-table {
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+
+.summary-table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default-row {
+    color: #2f2f2f;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.row {
+    height: 25px;
+}
+
+.deposit-summary {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #645ffb;
+}
+
+.withdrawal-summary {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #fa8c10;
+}
+
+.line {
+    height: 1px;
+    margin: 12px 0;
+
+    background-color: #eaeaea;
+}
+
+.balance-summary {
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #2f2f2f;
+}
+
+.final-balance {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #3a9ff1;
+}

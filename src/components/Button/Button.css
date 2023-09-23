@@ -1,0 +1,33 @@
+.btn-redirect,
+.btn-add-transaction,
+.btn-login-register {
+    height: 48px;
+
+    font-family: var(--primary-font);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #fff;
+    background-color: #7978d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-redirect {
+    width: 284px;
+}
+
+.btn-add-transaction {
+    width: 236px;
+}
+
+.btn-login-register {
+    width: 449px;
+}
+
+.btn-redirect:is(:hover, :focus),
+.btn-login-register:is(:hover, :focus) {
+    opacity: 0.8;
+}

@@ -1,0 +1,24 @@
+.container-register {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+
+    background: url(../../assets/background.png) no-repeat center / cover;
+}
+
+.container-main-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1440px;
+}
+
+.logo {
+    align-self: flex-start;
+
+    width: 170px;
+}
