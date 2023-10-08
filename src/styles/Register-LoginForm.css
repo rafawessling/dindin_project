@@ -5,22 +5,23 @@
     align-items: center;
     justify-content: space-evenly;
 
-    width: 513px;
+    max-width: 51.3rem;
+    padding: 0 5rem;
 
     background-color: #fff;
 }
 
 .container-form-login {
-    height: 535px;
+    height: 53.5rem;
 }
 
 .container-form-register {
-    height: 781px;
+    height: 78.1rem;
 }
 
 .title-form {
     font-family: var(--primary-font);
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 500;
 
     color: var(--primary-color-lilac);
@@ -31,34 +32,70 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
+
+    width: 100%;
 }
 
 .inputs-login-content {
-    height: 220px;
+    height: 22rem;
 }
 
 .container-input {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.8rem;
+
+    max-width: 100%;
 }
 
 .container-input label,
 .container-input input {
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
 
     color: #484848;
 }
 
 .container-input input {
-    width: 449px;
-    height: 63px;
-    padding: 8px;
+    max-width: 100%;
+    height: 6.3rem;
+    padding: 0.8rem;
 
     background: #fff;
     border: 1px solid #555;
     border-radius: 5px;
+}
+
+@media (max-width: 580px) {
+    .container-form-login,
+    .container-form-register {
+        align-items: center;
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .inputs-login-content,
+    .inputs-register-content {
+        width: 100%;
+    }
+
+    .container-input {
+        width: 100%;
+    }
+
+    .container-input input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .container-form-login,
+    .container-form-register {
+        border-radius: 15px;
+    }
+    .container-input input {
+        height: 5rem;
+    }
 }
