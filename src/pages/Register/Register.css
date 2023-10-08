@@ -34,9 +34,3 @@
         margin-left: 1rem;
     }
 }
-
-@media (max-width: 390px) {
-    .container-register {
-        padding-top: 3rem;
-    }
-}

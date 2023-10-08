@@ -24,12 +24,17 @@ function SignIn() {
                             place and just a click away.
                         </p>
                         <Link to="/register">
-                            <Button type="button" className="btn-redirect">
+                            <Button type="button" className="btn-redirect btn-left">
                                 Register
                             </Button>
                         </Link>
                     </div>
                     <FormLogin className="form-login" />
+                    <Link to="/register">
+                        <Button type="button" className="btn-redirect btn-down">
+                            Register
+                        </Button>
+                    </Link>
                 </section>
             </section>
         </main>

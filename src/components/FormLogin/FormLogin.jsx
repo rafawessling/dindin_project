@@ -76,7 +76,7 @@ function FormLogin() {
                     {formErrors.token && <p className="error">{formErrors.token}</p>}
                 </div>
             </section>
-            <Button type="submit" className="btn-login-register">
+            <Button type="submit" className="btn-login-register btn-login">
                 Signin
             </Button>
         </form>

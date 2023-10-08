@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: space-evenly;
 
-    max-width: 51.3rem;
-    padding: 0 5rem;
+    width: 51.3rem;
+    padding: 0 3.5rem;
 
     background-color: #fff;
 }
@@ -68,12 +68,24 @@
     border-radius: 5px;
 }
 
+@media (max-width: 980px) {
+    .container-form-login {
+        align-items: center;
+        width: 50%;
+    }
+}
+
+@media (max-width: 815px) {
+    .container-form-login {
+        width: 80%;
+    }
+}
+
 @media (max-width: 580px) {
     .container-form-login,
     .container-form-register {
         align-items: center;
         width: 100%;
-        padding: 0 3rem;
     }
 
     .inputs-login-content,
@@ -94,8 +106,5 @@
     .container-form-login,
     .container-form-register {
         border-radius: 15px;
-    }
-    .container-input input {
-        height: 5rem;
     }
 }

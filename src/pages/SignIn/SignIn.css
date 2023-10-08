@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
 
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 5rem;
 
     background: url(../../assets/background.png) no-repeat center / cover;
 }
@@ -13,11 +13,11 @@
     display: flex;
     flex-direction: column;
 
-    width: 1440px;
+    width: 75%;
 }
 
 .logo {
-    width: 170px;
+    width: 17rem;
     align-self: flex-start;
 }
 
@@ -27,8 +27,8 @@
     justify-content: space-between;
     flex-grow: 1;
 
-    width: 100%;
-    margin-bottom: 100px;
+    max-width: 100%;
+    margin-bottom: 10rem;
 }
 
 .container-texts {
@@ -36,10 +36,10 @@
 }
 
 .container-texts h2 {
-    width: 615px;
+    max-width: 61.5rem;
 
     font-family: var(--primary-font);
-    font-size: 52px;
+    font-size: 5.2rem;
     font-weight: 700;
 
     color: #fff;
@@ -50,16 +50,105 @@
 }
 
 .container-texts p {
-    width: 600px;
-    margin: 33px 0 43px 0;
+    max-width: 60rem;
+    margin: 3.3rem 0 4.3rem 0;
 
     font-family: var(--primary-font);
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 400;
 
     color: #fff;
 }
 
 .form-login {
-    width: 50%;
+    max-width: 51.3rem;
+}
+
+.btn-down {
+    display: none;
+}
+
+@media (max-width: 1480px) {
+    .container-main-signin {
+        width: 85%;
+    }
+
+    .container-texts {
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .container-main-signin {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .container-section {
+        width: 100%;
+    }
+
+    .form-login {
+        width: 100%;
+    }
+}
+
+@media (max-width: 815px) {
+    .container-main-signin {
+        width: 100vw;
+    }
+
+    .logo {
+        margin-left: 10%;
+    }
+
+    .container-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+
+        width: 100%;
+    }
+
+    .container-texts {
+        width: 75%;
+        margin-top: 2rem;
+    }
+
+    .container-texts h2 {
+        font-size: 4.33rem;
+    }
+
+    .container-texts p {
+        display: none;
+    }
+
+    .btn-left {
+        display: none;
+    }
+
+    .btn-down {
+        display: block;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 12px 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .container-main-signin {
+        width: 100vw;
+    }
+
+    .container-section {
+        justify-content: space-evenly;
+    }
+
+    .container-texts h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .btn-down {
+        width: 78vw;
+    }
 }
