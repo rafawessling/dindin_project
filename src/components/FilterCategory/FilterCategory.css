@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 0.4rem;
 
-    width: 80px;
-    height: 30px;
+    width: 8rem;
+    height: 3rem;
 
     background: #fafafa;
     box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.1);
@@ -13,12 +13,12 @@
 }
 
 .img-filter {
-    width: 14px;
+    width: 1.4rem;
 }
 
 .name-filter {
     font-family: var(--secondary-font);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
 
     color: #000;
@@ -29,10 +29,10 @@
     flex-direction: column;
     justify-content: space-between;
 
-    width: 960px;
-    height: 260px;
-    margin: 25px 0;
-    padding: 32px;
+    width: 96rem;
+    height: 26rem;
+    margin: 2.5rem 0;
+    padding: 3.2rem;
 
     border-radius: 10px;
     background: #fafafa;
@@ -41,7 +41,7 @@
 
 .name-categories {
     font-family: var(--primary-font);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
 
     color: #b9b9b9;
@@ -50,7 +50,7 @@
 .box-categories {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .each-category {
@@ -58,12 +58,12 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 110px;
-    height: 30px;
-    padding: 0 10px;
+    width: 11rem;
+    height: 3rem;
+    padding: 0 1rem;
 
     font-family: var(--primary-font);
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 400;
 
     color: #000;
@@ -81,15 +81,15 @@
 
 .container-btn-filters {
     display: flex;
-    gap: 18px;
+    gap: 1.8rem;
 }
 
 .btn-filters {
-    width: 98px;
-    height: 30px;
+    width: 9.8rem;
+    height: 3rem;
 
     font-family: var(--secondary-font);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
 
     border-radius: 10px;
@@ -106,4 +106,103 @@
 .btn-apply {
     color: #fff;
     background: #7978d9;
+}
+
+.filter-categories::-webkit-scrollbar {
+    height: 0.6rem;
+    width: 0.6rem;
+}
+.filter-categories::-webkit-scrollbar-track {
+    margin-top: 0.5rem;
+
+    background: #f3f3f3;
+    border-radius: 20px;
+}
+
+.filter-categories::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 120, 217, 0.2);
+    border-radius: 20px;
+    border: 1px solid #f3f3f3;
+}
+
+@media (max-width: 1360px) {
+    .filter-categories {
+        width: 80vw;
+        height: 23rem;
+        margin: 2rem 0;
+        padding: 2.8rem 3.2rem;
+    }
+
+    .box-categories {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 1102px) {
+    .filter-categories {
+        margin: 0.8rem 0;
+        padding: 1.5rem 3.2rem;
+    }
+
+    .box-categories {
+        gap: 0.45rem;
+    }
+}
+
+@media (max-width: 792px) {
+    .filter-categories {
+        height: 26.3rem;
+    }
+
+    .each-category {
+        width: 12.3rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 712px) {
+    .filter-categories {
+        height: 26.3rem;
+        overflow-y: auto;
+    }
+
+    .box-categories {
+        margin: 0.8rem 0;
+    }
+
+    .each-category {
+        width: 24.2%;
+        height: 3.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 665px) {
+    .each-category {
+        width: 32.6%;
+    }
+}
+
+@media (max-width: 597px) {
+    .filter-categories {
+        margin: 0.8rem 0;
+        padding: 1.5rem 2.8rem;
+    }
+
+    .each-category {
+        width: 49%;
+        height: 3.7rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .filter-categories {
+        margin: 0.8rem 0;
+        padding: 1.5rem 2.3rem;
+    }
+
+    .box-categories {
+        gap: 0.4rem;
+    }
 }

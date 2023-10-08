@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import Transactions from '../Transactions/Transactions';
 import SortDatesOld from '../../assets/sort-dates-old.png';
@@ -47,7 +48,7 @@ function TableTransactions({
                     <th className="col6">&nbsp;</th>
                 </tr>
             </thead>
-            <tbody className={showFilter ? 'container-body-table smaller-table' : 'container-body-table '}>
+            <tbody className={showFilter ? 'container-body-table smaller-table' : 'container-body-table'}>
                 {!isFiltered ? (
                     <Transactions
                         transactions={transactions}

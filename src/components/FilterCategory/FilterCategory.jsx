@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { categoriesExpenses, categoriesIncomes } from '../../utils/categories';
 import Filter from '../../assets/filter.png';
 import './FilterCategory.css';
