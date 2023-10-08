@@ -7,7 +7,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafawessling/dindin_project">
   
-  <a href="https://github.com/rafawessling/module3_react_project/commits/main">
+  <a href="https://github.com/rafawessling/dindin_project/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/rafawessling/dindin_project">
   </a>
 
