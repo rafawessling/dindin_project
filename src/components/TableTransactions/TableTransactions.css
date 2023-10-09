@@ -92,7 +92,7 @@
     }
 
     .container-body-table {
-        height: 28rem;
+        max-height: 28rem;
     }
 
     .smaller-table {

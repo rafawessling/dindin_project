@@ -67,17 +67,23 @@ function EditUser({ setEditUser }) {
             </div>
             <section className="container-inputs-modal">
                 <div className="container-input-modal">
-                    <label htmlFor="name">Name</label>
+                    <label id="label-name" htmlFor="name">
+                        Name
+                    </label>
                     <input id="name" name="name" type="text" value={name} onChange={handleChangeInput} />
                     {formErrors.name && <p className="error">{formErrors.name}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label htmlFor="email">Email</label>
+                    <label id="label-email" htmlFor="email">
+                        Email
+                    </label>
                     <input id="email" name="email" type="email" value={email} onChange={handleChangeInput} />
                     {formErrors.email && <p className="error">{formErrors.email}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label htmlFor="password">Password</label>
+                    <label id="label-password" htmlFor="password">
+                        Password
+                    </label>
                     <input
                         id="password"
                         name="password"
@@ -88,7 +94,9 @@ function EditUser({ setEditUser }) {
                     {formErrors.password && <p className="error">{formErrors.password}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label htmlFor="passwordConfirmation">Password confirmation</label>
+                    <label id="label-passwordConfirmation" htmlFor="passwordConfirmation">
+                        Password confirmation
+                    </label>
                     <input
                         id="passwordConfirmation"
                         name="passwordConfirmation"

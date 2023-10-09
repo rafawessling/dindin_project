@@ -38,6 +38,12 @@
     }
 }
 
+@media (max-width: 620px) {
+    .btn-redirect {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 580px) {
     .btn-login-register {
         width: 100%;

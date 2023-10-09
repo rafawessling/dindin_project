@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 670px;
+    height: 67rem;
 }
 
 .header-modal {
@@ -14,7 +14,7 @@
 
 .title-modal {
     font-family: var(--primary-font);
-    font-size: 34px;
+    font-size: 3.4rem;
     font-weight: 700;
 
     color: #000;
@@ -27,30 +27,30 @@
 .container-inputs-modal {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 2.6rem;
 }
 
 .container-input-modal {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.8rem;
 }
 
 .container-input-modal label {
     font-family: var(--primary-font);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
 
     color: #484848;
 }
 
 .container-input-modal input {
-    width: 485px;
-    height: 63px;
-    padding: 8px;
+    width: 48.5rem;
+    height: 6.3rem;
+    padding: 0.8rem;
 
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
 
     color: #484848;
@@ -61,4 +61,38 @@
 
 .btn-redirect {
     align-self: center;
+}
+
+@media (max-width: 620px) {
+    .form-modal-edit-user {
+        width: 80vw;
+    }
+
+    .btn-redirect {
+        width: 40vw;
+    }
+
+    #name,
+    #email,
+    #password,
+    #passwordConfirmation {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 415px) {
+    .header-modal h3 {
+        font-size: 2.8rem;
+    }
+
+    .btn-redirect {
+        width: 80vw;
+    }
+
+    #label-name,
+    #label-email,
+    #label-password,
+    #label-passwordConfirmation {
+        font-size: 2rem;
+    }
 }

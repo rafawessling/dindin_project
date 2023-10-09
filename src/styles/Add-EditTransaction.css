@@ -3,16 +3,34 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 780px;
+    height: 78rem;
+}
+
+.header-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-modal {
+    font-family: var(--primary-font);
+    font-size: 3.4rem;
+    font-weight: 700;
+
+    color: #000;
+}
+
+.header-modal img {
+    cursor: pointer;
 }
 
 .btn-deposit,
 .btn-withdrawal {
-    width: 245px;
-    height: 56px;
+    width: 24.5rem;
+    height: 5.6rem;
 
     font-family: var(--primary-font);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
 
     color: #fff;
@@ -36,16 +54,52 @@
 }
 
 .container-input-modal select {
-    width: 485px;
-    height: 63px;
-    padding: 8px;
+    width: 48.5rem;
+    height: 6.3rem;
+    padding: 0.8rem;
 
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
 
     color: #484848;
     background: #fff;
     border: 1px solid #555;
     border-radius: 5px;
+}
+
+@media (max-width: 620px) {
+    .form-modal-add-transaction {
+        width: 80vw;
+    }
+
+    .btn-deposit,
+    .btn-withdrawal {
+        width: 40vw;
+    }
+
+    #amount,
+    #category,
+    #date,
+    #description {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 415px) {
+    .header-modal h3 {
+        font-size: 2.8rem;
+    }
+
+    .btn-deposit,
+    .btn-withdrawal {
+        width: 80vw;
+    }
+
+    #label-amount,
+    #label-category,
+    #label-date,
+    #label-description {
+        font-size: 2rem;
+    }
 }
