@@ -196,6 +196,12 @@
     }
 }
 
+@media (max-width: 530px) {
+    .filter-categories {
+        width: 90vw;
+    }
+}
+
 @media (max-width: 499px) {
     .filter-categories {
         margin: 0.8rem 0;
@@ -204,5 +210,11 @@
 
     .box-categories {
         gap: 0.4rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .filter-categories {
+        width: 95vw;
     }
 }

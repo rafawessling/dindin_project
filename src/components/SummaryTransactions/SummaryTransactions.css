@@ -5,7 +5,7 @@
     align-items: center;
 
     width: 236px;
-    height: 196px;
+    height: 19.6rem;
 
     border-radius: 10px;
     background: #fafafa;
@@ -17,8 +17,8 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    width: 175px;
-    height: 196px;
+    width: 17.5rem;
+    height: 19.6rem;
 
     font-family: var(--primary-font);
 }
@@ -88,4 +88,47 @@
     font-weight: 500;
 
     color: #3a9ff1;
+}
+
+@media (max-width: 530px) {
+    .container-summary-table {
+        height: 16.5rem;
+    }
+
+    .content-summary {
+        justify-content: space-between;
+        margin: 1.6rem 0;
+    }
+
+    .default-row {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-summary-table {
+        width: 90vw;
+    }
+
+    .content-summary {
+        width: 85%;
+    }
+
+    .summary-table {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .container-summary-table {
+        width: 95vw;
+    }
+
+    .content-summary {
+        width: 90%;
+    }
 }
