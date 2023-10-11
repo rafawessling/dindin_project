@@ -49,3 +49,10 @@
         margin-top: 5rem;
     }
 }
+
+@media (max-width: 415px) {
+    .square-modal {
+        height: 100vh;
+        margin-top: 0;
+    }
+}

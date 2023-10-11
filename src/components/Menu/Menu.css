@@ -29,19 +29,22 @@
     padding: 2rem;
     list-style: none;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .user-name-menu {
     width: 28rem;
     margin: 1.5rem 0 1rem 0;
+
     font-size: 16px;
     font-weight: 700;
+
     border-bottom: 1px solid #eaeaea;
 }
 
 .menu-option {
     width: 30rem;
+
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -49,6 +52,12 @@
 
 .menu-option:hover {
     background-color: rgba(61, 61, 61, 0.3);
+}
+
+@media (min-width: 631px) {
+    .container-menu {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {

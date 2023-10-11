@@ -25,10 +25,11 @@ function Home() {
     const [isFiltered, setIsFiltered] = useState(false);
     const [selectedFilters, setSelectedFilters] = useState([]);
     const [filteredTransactions, setFilteredTransactions] = useState([]);
+    const [showMenu, setShowMenu] = useState(false);
 
     return (
         <main className="container-home">
-            <Header setEditUser={setEditUser} />
+            <Header setEditUser={setEditUser} showMenu={showMenu} setShowMenu={setShowMenu} />
             <article className="container-content-home">
                 <section className="content-home">
                     <section className="left-side-main">

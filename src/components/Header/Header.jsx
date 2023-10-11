@@ -8,8 +8,7 @@ import './Header.css';
 import { useState } from 'react';
 import Menu from '../Menu/Menu.jsx';
 
-function Header({ setEditUser }) {
-    const [showMenu, setShowMenu] = useState(false);
+function Header({ setEditUser, showMenu, setShowMenu }) {
     const userName = getItem('name');
 
     const navigate = useNavigate();
