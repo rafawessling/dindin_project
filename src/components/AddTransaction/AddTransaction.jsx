@@ -123,17 +123,30 @@ function AddTransaction({ setAddTransaction, transactions, setTransactions, sele
             </div>
             <section className="container-inputs-modal">
                 <div className="container-input-modal">
-                    <label id="label-amount" htmlFor="amount">
+                    <label className="label-input-add" htmlFor="amount">
                         Amount
                     </label>
-                    <input id="amount" name="amount" type="text" value={amount} onChange={handleChangeInputValue} />
+                    <input
+                        className="input-add"
+                        id="amount"
+                        name="amount"
+                        type="text"
+                        value={amount}
+                        onChange={handleChangeInputValue}
+                    />
                     {formErrors.amount && <p className="error">{formErrors.amount}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-category" htmlFor="category">
+                    <label className="label-input-add" htmlFor="category">
                         Category
                     </label>
-                    <select id="category" name="category" value={selectCategory.id} onChange={handleChangeCategory}>
+                    <select
+                        className="input-add"
+                        id="category"
+                        name="category"
+                        value={selectCategory.id}
+                        onChange={handleChangeCategory}
+                    >
                         <option value="" />
                         {withdrawal
                             ? categoriesExpenses.map(category => (
@@ -150,10 +163,11 @@ function AddTransaction({ setAddTransaction, transactions, setTransactions, sele
                     {formErrors.category && <p className="error">{formErrors.category}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-date" htmlFor="date">
+                    <label className="label-input-add" htmlFor="date">
                         Date
                     </label>
                     <input
+                        className="input-add"
                         id="date"
                         name="date"
                         type="date"
@@ -164,10 +178,11 @@ function AddTransaction({ setAddTransaction, transactions, setTransactions, sele
                     {formErrors.date && <p className="error">{formErrors.date}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-description" htmlFor="description">
+                    <label className="label-input-add" htmlFor="description">
                         Description
                     </label>
                     <input
+                        className="input-add"
                         id="description"
                         name="description"
                         type="text"

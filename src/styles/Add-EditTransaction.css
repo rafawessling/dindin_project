@@ -53,6 +53,41 @@
     opacity: 0.8;
 }
 
+.container-inputs-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+
+.container-input-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.container-input-modal label {
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    font-weight: 500;
+
+    color: #484848;
+}
+
+.container-input-modal input {
+    width: 48.5rem;
+    height: 6.3rem;
+    padding: 0.8rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    color: #484848;
+    background: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
 .container-input-modal select {
     width: 48.5rem;
     height: 6.3rem;
@@ -78,28 +113,31 @@
         width: 40vw;
     }
 
-    #amount,
-    #category,
-    #date,
-    #description {
+    .container-input-modal .input-add {
         width: 80vw;
     }
 }
 
 @media (max-width: 415px) {
+    .form-modal-add-transaction {
+        justify-content: center;
+        gap: 1.8rem;
+    }
     .header-modal h3 {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .btn-deposit,
     .btn-withdrawal {
         width: 80vw;
+        height: 4.5rem;
     }
 
-    #label-amount,
-    #label-category,
-    #label-date,
-    #label-description {
-        font-size: 2rem;
+    .container-input-modal .label-input-add {
+        font-size: 1.8rem;
+    }
+
+    .container-input-modal .input-add {
+        height: 5rem;
     }
 }

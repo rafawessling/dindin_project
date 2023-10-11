@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AddTransaction from '../../components/AddTransaction/AddTransaction';
 import Button from '../../components/Button/Button';
 import EditTransaction from '../../components/EditTransaction/EditTransaction';
@@ -27,10 +27,16 @@ function Home() {
     const [filteredTransactions, setFilteredTransactions] = useState([]);
     const [showMenu, setShowMenu] = useState(false);
 
+    useEffect(() => {
+        if (editUser || addTransaction || showFilter) {
+            setShowMenu(false);
+        }
+    }, [editUser, addTransaction, showFilter]);
+
     return (
         <main className="container-home">
             <Header setEditUser={setEditUser} showMenu={showMenu} setShowMenu={setShowMenu} />
-            <article className="container-content-home">
+            <article className="container-content-home" onClick={() => setShowMenu(false)}>
                 <section className="content-home">
                     <section className="left-side-main">
                         <FilterCategory

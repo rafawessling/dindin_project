@@ -12,7 +12,7 @@
 }
 
 .date-head img {
-    margin: 0px 0px 1px 1px;
+    margin: 0 0 0.1rem 0.1rem;
 
     cursor: pointer;
 }
@@ -71,8 +71,27 @@
     cursor: pointer;
 }
 
+.no-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: calc(10rem + 17rem + 25rem + 15rem + 13rem + 9rem);
+    height: 7rem;
+
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+}
+
 @media (max-width: 1360px) {
     .body-main-table {
         white-space: nowrap;
+    }
+}
+
+@media (max-width: 1046px) {
+    .no-content {
+        justify-content: flex-start;
+        margin-left: calc(50vw - 4.5rem);
     }
 }

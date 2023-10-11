@@ -47,38 +47,46 @@ function Transactions({ transactions, setTransactions, setEditTransaction, setCu
         }
     };
 
-    return transactions.map(transaction => (
-        <tr className="body-main-table" key={transaction.id}>
-            <td className="date-table col1">{formatDate(transaction.date)}</td>
-            <td className="col2">{handleGetDay(transaction.date)}</td>
-            <td className="col3">{transaction.description}</td>
-            <td className="col4">{transaction.category.name}</td>
-            <td
-                className={
-                    transaction.withdrawal ? 'amount-table col5 withdrawal-value' : 'amount-table col5 deposit-value'
-                }
-            >
-                {formatAmount(transaction.amount)}
-            </td>
-            <td className="col6">
-                <div className="container-edit-delete">
-                    <img
-                        src={IconEdit}
-                        alt="Gray pencil with black tip and and black strip"
-                        onClick={() => handleEditTransaction(transaction)}
-                    />
-                    <img
-                        src={IconDelete}
-                        alt="Trash can in purple tones"
-                        onClick={() => handleDeleteTransaction(transaction.id)}
-                    />
-                    {showPopup === transaction.id && (
-                        <PopupDelete onConfirm={handleConfirmDelete} onCancel={() => setShowPopup(null)} />
-                    )}
-                </div>
-            </td>
-        </tr>
-    ));
+    return transactions.length > 0 ? (
+        transactions.map(transaction => (
+            <tr className="body-main-table" key={transaction.id}>
+                <td className="date-table col1">{formatDate(transaction.date)}</td>
+                <td className="col2">{handleGetDay(transaction.date)}</td>
+                <td className="col3">{transaction.description}</td>
+                <td className="col4">{transaction.category.name}</td>
+                <td
+                    className={
+                        transaction.withdrawal
+                            ? 'amount-table col5 withdrawal-value'
+                            : 'amount-table col5 deposit-value'
+                    }
+                >
+                    {formatAmount(transaction.amount)}
+                </td>
+                <td className="col6">
+                    <div className="container-edit-delete">
+                        <img
+                            src={IconEdit}
+                            alt="Gray pencil with black tip and and black strip"
+                            onClick={() => handleEditTransaction(transaction)}
+                        />
+                        <img
+                            src={IconDelete}
+                            alt="Trash can in purple tones"
+                            onClick={() => handleDeleteTransaction(transaction.id)}
+                        />
+                        {showPopup === transaction.id && (
+                            <PopupDelete onConfirm={handleConfirmDelete} onCancel={() => setShowPopup(null)} />
+                        )}
+                    </div>
+                </td>
+            </tr>
+        ))
+    ) : (
+        <div className="no-content">
+            <span>No content</span>
+        </div>
+    );
 }
 
 export default Transactions;

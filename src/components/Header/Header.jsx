@@ -5,7 +5,6 @@ import IconUser from '../../assets/icon-user.png';
 import Logo from '../../assets/logo.png';
 import IconMenu from '../../assets/icon-menu.svg';
 import './Header.css';
-import { useState } from 'react';
 import Menu from '../Menu/Menu.jsx';
 
 function Header({ setEditUser, showMenu, setShowMenu }) {
@@ -22,8 +21,10 @@ function Header({ setEditUser, showMenu, setShowMenu }) {
         <section className="container-header">
             <section className="container-header-content">
                 <img
+                    className="logo-home-page"
                     src={Logo}
                     alt="Logo with the outline of a hexagon with a white line inside and a dark blue line outside, accompanied by the word Dindin"
+                    onClick={() => setShowMenu(false)}
                 />
                 <div className="container-user">
                     <img

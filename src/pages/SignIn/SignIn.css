@@ -147,8 +147,30 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 415px) {
+    .container-signin {
+        justify-content: flex-start;
+        height: 100vh;
+        padding: 0;
+
+        background: none;
+        background-color: #fff;
+    }
+    .container-main-signin img,
+    .container-texts {
+        display: none;
+    }
+
+    .container-section {
+        gap: 0;
+    }
+
     .btn-down {
-        width: 78vw;
+        max-width: 8rem;
+
+        font-size: 1.8rem;
+
+        background-color: #fff;
+        color: #7978d9;
     }
 }

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 236px;
+    width: 23.6rem;
     height: 19.6rem;
 
     border-radius: 10px;
@@ -24,7 +24,7 @@
 }
 
 .title-summary-table {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
 
     color: #2f2f2f;
@@ -33,7 +33,7 @@
 .summary-table {
     display: flex;
     flex-direction: column;
-    width: 175px;
+    width: 17.5rem;
 }
 
 .summary-table tr {
@@ -44,17 +44,17 @@
 
 .default-row {
     color: #2f2f2f;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .row {
-    height: 25px;
+    height: 2.5rem;
 }
 
 .deposit-summary {
     text-align: right;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 500;
 
     color: #645ffb;
@@ -62,21 +62,21 @@
 
 .withdrawal-summary {
     text-align: right;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 500;
 
     color: #fa8c10;
 }
 
 .line {
-    height: 1px;
-    margin: 12px 0;
+    height: 0.1rem;
+    margin: 1.2rem 0;
 
     background-color: #eaeaea;
 }
 
 .balance-summary {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
 
     color: #2f2f2f;
@@ -84,7 +84,7 @@
 
 .final-balance {
     text-align: right;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
 
     color: #3a9ff1;
@@ -101,7 +101,7 @@
     }
 
     .default-row {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 

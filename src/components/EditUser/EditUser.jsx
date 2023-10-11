@@ -67,24 +67,39 @@ function EditUser({ setEditUser }) {
             </div>
             <section className="container-inputs-modal">
                 <div className="container-input-modal">
-                    <label id="label-name" htmlFor="name">
+                    <label className="label-user" htmlFor="name">
                         Name
                     </label>
-                    <input id="name" name="name" type="text" value={name} onChange={handleChangeInput} />
+                    <input
+                        className="input-user"
+                        id="name"
+                        name="name"
+                        type="text"
+                        value={name}
+                        onChange={handleChangeInput}
+                    />
                     {formErrors.name && <p className="error">{formErrors.name}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-email" htmlFor="email">
+                    <label className="label-user" htmlFor="email">
                         Email
                     </label>
-                    <input id="email" name="email" type="email" value={email} onChange={handleChangeInput} />
+                    <input
+                        className="input-user"
+                        id="email"
+                        name="email"
+                        type="email"
+                        value={email}
+                        onChange={handleChangeInput}
+                    />
                     {formErrors.email && <p className="error">{formErrors.email}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-password" htmlFor="password">
+                    <label className="label-user" htmlFor="password">
                         Password
                     </label>
                     <input
+                        className="input-user"
                         id="password"
                         name="password"
                         type="password"
@@ -94,10 +109,11 @@ function EditUser({ setEditUser }) {
                     {formErrors.password && <p className="error">{formErrors.password}</p>}
                 </div>
                 <div className="container-input-modal">
-                    <label id="label-passwordConfirmation" htmlFor="passwordConfirmation">
+                    <label className="label-user" htmlFor="passwordConfirmation">
                         Password confirmation
                     </label>
                     <input
+                        className="input-user"
                         id="passwordConfirmation"
                         name="passwordConfirmation"
                         type="password"
