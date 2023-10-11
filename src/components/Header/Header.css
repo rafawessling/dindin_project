@@ -3,9 +3,9 @@
     align-items: flex-start;
     justify-content: center;
 
-    height: 224px;
+    height: 22.4rem;
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 5rem;
 
     background: linear-gradient(90deg, #05ede3 0.02%, #645ffb 99.63%);
 }
@@ -15,8 +15,8 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 1440px;
-    height: 46px;
+    width: 85%;
+    height: 4.6rem;
 }
 
 .container-user {
@@ -25,9 +25,9 @@
 }
 
 .user-name {
-    margin-right: 16px;
+    margin-right: 1.6rem;
     font-family: var(--primary-font);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
 
     color: #fff;
@@ -36,4 +36,23 @@
 .icon-user,
 .icon-logout {
     cursor: pointer;
+}
+
+.container-menu-user {
+    display: none;
+}
+
+@media (max-width: 630px) {
+    .container-user {
+        display: none;
+    }
+
+    .container-menu-user {
+        display: block;
+    }
+
+    .container-menu-user img {
+        width: 4.5rem;
+        cursor: pointer;
+    }
 }

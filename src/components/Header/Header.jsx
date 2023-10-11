@@ -3,9 +3,13 @@ import { getItem, removeItem } from '../../utils/storage';
 import IconLogout from '../../assets/icon-logout.png';
 import IconUser from '../../assets/icon-user.png';
 import Logo from '../../assets/logo.png';
+import IconMenu from '../../assets/icon-menu.svg';
 import './Header.css';
+import { useState } from 'react';
+import Menu from '../Menu/Menu.jsx';
 
 function Header({ setEditUser }) {
+    const [showMenu, setShowMenu] = useState(false);
     const userName = getItem('name');
 
     const navigate = useNavigate();
@@ -19,7 +23,6 @@ function Header({ setEditUser }) {
         <section className="container-header">
             <section className="container-header-content">
                 <img
-                    className="logo"
                     src={Logo}
                     alt="Logo with the outline of a hexagon with a white line inside and a dark blue line outside, accompanied by the word Dindin"
                 />
@@ -38,6 +41,21 @@ function Header({ setEditUser }) {
                         onClick={handleLogOut}
                     />
                 </div>
+                <div className="container-menu-user">
+                    <img
+                        src={IconMenu}
+                        alt="Icon with three white horizontal bars aligned and equally spaced"
+                        onClick={() => setShowMenu(!showMenu)}
+                    />
+                </div>
+                {showMenu && (
+                    <Menu
+                        setShowMenu={setShowMenu}
+                        userName={userName}
+                        setEditUser={setEditUser}
+                        handleLogOut={handleLogOut}
+                    />
+                )}
             </section>
         </section>
     );
